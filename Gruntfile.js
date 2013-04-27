@@ -29,8 +29,10 @@ module.exports = function(grunt) {
         mocha: {
             all: ['test/**/*.html'],
             options: {
-                reporter: 'Nyan',
-                run: true
+                reporter: 'Spec',
+                run: false,
+                ignoreLeaks: false,
+                timeout:5000
             }
         }
     });
